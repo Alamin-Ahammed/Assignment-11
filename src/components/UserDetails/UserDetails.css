@@ -1,0 +1,32 @@
+.user-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.user-details {
+  width: 800%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.user-details img {
+  width: 100%;
+  height: 40%;
+  margin-inline: auto;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.user-details-content {
+  padding: 20px;
+}
+
+.user-details h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+

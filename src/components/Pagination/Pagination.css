@@ -1,0 +1,26 @@
+ 
+.left_Right_Arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.left_Right_Arrow > div > * {
+    cursor: pointer;
+    color: grey;
+    padding: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: all 0.2s;
+}
+
+.left_Right_Arrow :hover {
+    color: #1877f2;
+    background-color: lightgray;
+}

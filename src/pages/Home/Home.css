@@ -1,0 +1,72 @@
+.home-container {
+    text-align: center;
+    background-color: #23272F;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .logo_Home_page {
+    width: 100px; 
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .heading {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .subheading {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+  }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0D6D8C; 
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0b6381; 
+  }
+  
+  .api-button {
+    background-color: #282c34;
+  }
+  
+  
+
+  @media screen and (max-width: 768px) {
+    .logo {
+      width: 80px;
+    }
+  
+    .heading {
+      font-size: 28px;
+    }
+  
+    .subheading {
+      font-size: 16px;
+    }
+  }
+  
