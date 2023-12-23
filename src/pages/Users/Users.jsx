@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import "./Users.css";
-import User from "../../components/User/user";
+import User from "../../components/User/User";
 
 export default function Users() {
   const users = useLoaderData();
