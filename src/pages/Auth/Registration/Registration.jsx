@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import Pagination from "../../../components/Pagination/Pagination";
 import "./Registration.css";
 
 const Registration = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="registration-container">
@@ -45,6 +47,10 @@ const Registration = () => {
 
           <button type="submit">Register</button>
         </form>
+        <div className="login_text">
+          <p>Have an Account?</p>
+          <a onClick={()=> navigate('/login')}>Log In</a>
+        </div>
       </div>
       <Pagination />
     </>

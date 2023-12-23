@@ -53,9 +53,16 @@
   a {
     color: #1877f2;
     text-decoration: none;
+    cursor: pointer;
   }
   
   a:hover {
     text-decoration: underline;
+  }
+
+  .register_text {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.7rem;
   }
  

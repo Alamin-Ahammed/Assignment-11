@@ -45,3 +45,9 @@
     background-color: #146eb4; 
   }
   
+  .login_text {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
