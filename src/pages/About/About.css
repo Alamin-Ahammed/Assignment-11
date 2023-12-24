@@ -19,4 +19,18 @@
     line-height: 1.6;
     margin-bottom: 15px;
   }
-  
+
+  .abouts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .showmorephoto {
+    width: 350px;
+  }
+
+  .abouts > div > h1 {
+    text-align: left;
+  }
