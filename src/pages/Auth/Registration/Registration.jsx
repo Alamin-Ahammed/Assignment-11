@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Form, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -33,7 +33,7 @@ const Registration = () => {
         .required("Confirm Password is required"),
       img: Yup.mixed().required("Image is required"),
     }),
-    onSubmit: async (values, { resetForm }) => {
+    onSubmit: async (values, { setSubmitting, resetForm }) => {
       try {
         const userCredential = await createUserWithEmailAndPassword(
           auth,
@@ -42,9 +42,9 @@ const Registration = () => {
         );
 
         const user = userCredential.user;
-        
-        //resetting form 
-        resetForm()
+
+        //resetting form
+        resetForm();
 
         // Upload image
         if (values.img) {

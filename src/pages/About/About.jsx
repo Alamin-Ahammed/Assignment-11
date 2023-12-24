@@ -4,7 +4,7 @@ import "./About.css";
 
 export default function About() {
   const [showMore, setShowMore] = useState(false);
-  const { userInfo } = useUserContext();
+  const { userInfo={} } = useUserContext();
   const { uid, displayName, email, imgURL } = userInfo;
 
   const handleShowMore = () => {
